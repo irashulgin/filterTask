@@ -1,30 +1,29 @@
 export const fieldType = {
-  ["Work Item Type"]: {
+  "Work Item Type": {
     operators: ["equals", "contains", "does not contain"],
     values: ["Backlog", "Bug", "Task"],
   },
-  ["Team"]: {
+  Team: {
     operators: ["include", "exclude"],
     values: ["Team A", "Team B", "Team C"],
   },
-  ["Created By"]: {
+  "Created By": {
     operators: ["include", "exclude"],
     values: ["User A", "User B", "User C"],
   },
-  ["Tags"]: {
+  Tags: {
     operators: ["include", "exclude"],
     values: ["UI", "DSP", "ADFR", "DB"],
   },
-  ["State"]: {
+  State: {
     operators: ["equals", "contains", "does not contain"],
     values: ["New", "In progress", "Done"],
   },
-  ["ID"]: {
+  ID: {
     operators: ["equals", "Starts With", "Ends With"],
     values: [111, 222, 333],
   },
 };
-
 
 const checkConstrainsWithLocalStorage = (res) => {
   if (
